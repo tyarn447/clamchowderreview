@@ -218,26 +218,31 @@ h2 {
 .header-layout {
     display: flex;
     align-items: center;
-    gap: 30px;
-    text-align: left;
+    position: relative;
+    min-height: 170px;
 }
 
 .header-layout .header-text {
     flex: 1;
+    text-align: center;
 }
 
 .mascot {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 320px;
-    flex-shrink: 0;
     opacity: 0.95;
 }
 
 .mascot-small {
-    float: left;
-    width: 100px;
-    margin-right: 20px;
-    margin-top: 4px;
-    opacity: 0.85;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    opacity: 0.95;
 }
 
 /* Footer */
@@ -266,12 +271,11 @@ footer p {
     }
 
     .header-layout {
-        flex-direction: column;
-        text-align: center;
+        min-height: 120px;
     }
 
-    .mascot {
-        width: 200px;
+    .mascot, .mascot-small {
+        width: 180px;
     }
 
     .review-image-left {
