@@ -215,12 +215,21 @@ h2 {
 }
 
 /* Mascot */
+.header-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.header-layout .header-text {
+    flex: 1;
+}
+
 .mascot {
-    float: left;
-    width: 110px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    opacity: 0.92;
+    width: 220px;
+    flex-shrink: 0;
+    opacity: 0.95;
 }
 
 .mascot-small {
@@ -254,6 +263,15 @@ footer p {
 
     header h1 {
         font-size: 2rem;
+    }
+
+    .header-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mascot {
+        width: 150px;
     }
 
     .review-image-left {
