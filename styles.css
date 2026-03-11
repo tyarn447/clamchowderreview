@@ -217,7 +217,7 @@ h2 {
 /* Mascot */
 .header-layout {
     display: grid;
-    grid-template-columns: 320px 1fr 320px;
+    grid-template-columns: 360px 1fr 360px;
     align-items: center;
 }
 
@@ -226,7 +226,7 @@ h2 {
 }
 
 .mascot, .mascot-small {
-    width: 320px;
+    width: 360px;
     opacity: 0.95;
 }
 
@@ -256,11 +256,11 @@ footer p {
     }
 
     .header-layout {
-        grid-template-columns: 160px 1fr 160px;
+        grid-template-columns: 180px 1fr 180px;
     }
 
     .mascot, .mascot-small {
-        width: 160px;
+        width: 180px;
     }
 
     .review-image-left {
