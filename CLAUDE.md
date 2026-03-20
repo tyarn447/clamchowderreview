@@ -75,6 +75,8 @@ Required fields:
 - New posts must also get a card added to `index.html` in the `.reviews` section
 
 ## Adding a Post to index.html
+The latest/most recent post always goes **first** in the reviews section. When adding a new card, insert it at the top of the `.reviews` section (right after `<h2>Recent Reviews</h2>`), pushing older cards down.
+
 Paste a new `.review-card` div into the reviews section:
 
 ```html
